@@ -1,0 +1,29 @@
+
+* {
+  box-sizing: border-box;
+}
+.page-footer {
+ position: fix; 
+   bottom:0;
+   /* padding-top:5px; */
+  /*  padding-bottom:10px; */
+  height:60px;
+   width:100%;
+   
+    /* Height of the footer */
+
+}
+.container {
+  width: 100%;
+  /* max-width: 960px; */
+  margin: 0 auto;
+  clear: both;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+  margin-right: 50px;
+}

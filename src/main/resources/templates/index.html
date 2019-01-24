@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>DevOpsTeam</title>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css"> 
+
 </head>
 <body>
-<p>Group Portfollio for Full Pipeline Project</p>
+<div th:replace="fragments/nav :: navbar" ></div>
+<div>
+  <p>Group Portfolio for Full Pipeline Project </p></div>
+
+<div th:replace="fragments/nav :: foot" ></div>
+
+<script src="../javascript/index.js" ></script>
 </body>
 </html>

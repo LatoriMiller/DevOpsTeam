@@ -3,21 +3,96 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>DevOpsTeam</title>
-
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- Add w3 template   -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Add icon library for card -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/index.css"> 
-
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div th:replace="fragments/nav :: navbar" ></div>
-<div>
-  <p>Group Portfolio for Full Pipeline Project </p></div>
+  <div th:replace="fragments/nav :: navbar" ></div>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>DevOps</b> Team</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#jayanti" class="w3-bar-item w3-button">Jayanti</a>
+      <a href="#latori" class="w3-bar-item w3-button">Latori</a>
+      <a href="#stacey" class="w3-bar-item w3-button">Stacey</a>
+      <a href="#sneha" class="w3-bar-item w3-button">Sneha</a>
+    </div>
+  </div>
+</div>
 
-<div th:replace="fragments/nav :: foot" ></div>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/DevOpsVenn.jpg" alt="DevOps" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Team</b></span> <span class="w3-hide-small w3-text-light-grey"></span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>A dynamic team currently enrolled and enjoying Tech Talent's South Corporate Partnership Program with Cognizant focused on the Continuous Integration and Continuous Deployment process.
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/jayanti.png" alt="Jayanti" style="width:100%">
+      <h3>Jayanti</h3>
+      <p class="w3-opacity">DevOps Member</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block" >Find Out More</button></p>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+ 	  <img src="/LatoriPic.jpg" alt="John" style="width:100%">
+      <h3>Latori Miller</h3>
+      <p class="w3-opacity">DevOps Member</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Find Out More</button></p>
+    </div> 
+   
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/Sneha.jpg" alt="Mike" style="width:100%">
+      <h3>Sneha</h3>
+      <p class="w3-opacity">DevOps Member</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Find Out More</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/Stacey.JPG" alt="Stacey" style="width:100%">
+      <h3>Stacey</h3>
+      <p class="w3-opacity">DevOps Member</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Find Out More</button></p>
+    </div>
+  </div>
+
+ 
+ 
+<!-- End page content -->
+</div>
+
+  <div th:replace="fragments/nav :: foot" ></div>
 
 <script src="../javascript/index.js" ></script>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by High Tech Ladies </p>
+</footer>
+
 </body>
 </html>

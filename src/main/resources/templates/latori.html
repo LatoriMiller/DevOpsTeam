@@ -1,46 +1,171 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="ISO-8859-1">
-<title>DevOpsTeam</title>
+<html>
+<title>Meet Latori</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/image/LatoriPic.jpg');
+  min-height: 100%;
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/css/index.css"> 
-
-</head>
+</style>
 <body>
-<div th:replace="fragments/nav :: navbar" ></div>
-<div id="main-container" class="container">
-<div class=row></div>
-    <section class="main-section">
-      <h1>Latori</h1>
-	
-      <img src="../image/LatoriPic.jpg" class="auth-image" alt="">
 
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
 
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-        book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
-        more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="/" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="jayanti" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Jayanti</a>
+    <a href="stacey" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Stacey</a>
+    <a href="sneha" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Sneha</a>
+  </div>
+</nav>
 
-      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
-        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-        using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
-        page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
-        sites still in their infancy.</p>
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
 
-    </section>
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:88px 32px" id="home">
+    <h1 class="w3-jumbo"><b>Latori Miller</b></h1>
+    <p>Jr. DevOps Engineer </p>
+   <img src="DevOpsVenn.jpg" class="w3-image w3-greyscale" style="width:45%;margin:12px">
+  
+  </header>
+   
+
+  <!-- Portfolio Section -->
+   
+   <!-- <div class="w3-padding-32 w3-content" id="portfolio">-->
+     <h2 class="w3-text-grey">What is DevOps?</h2>
+    <hr class="w3-opacity">  
+   <p>DevOps is an enterprise software development phrase used to mean a type of 
+   	agile relationship between development and IT operations. The goal of DevOps is 
+   	to change and improve the relationship by advocating better 
+   communication and collaboration between these two business units.</p>
+
+   
+   
+  <!-- End Portfolio Section -->
+ 
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>Get to know me!</h2>
+    <hr class="w3-opacity">
+    <p>I am a programming enthusiast, with a background in Finance, HR and IT. I have worked 
+   	 worked on various software development projects within the IT and automotive industries.
+     While my core focus is software development, I also has experience with
+     database maintenance, and hardware support. When I'm not writing code, 
+   	 I enjoy spending time with my family and watching Sci-Fi movies.
+    </p>
+    <h3 class="w3-padding-16">My Skills</h3>
+    <p class="w3-wide">Java | C#</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%"></div>
     </div>
-    
-   <div class=row></div>
+    <p class="w3-wide">Javascript | Angular</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%"></div>
+    </div>
+    <p class="w3-wide">SQL | MongoDB</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%"></div>
+    </div><br>
 
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">CI/CD</span><br> 
+        Jenkins
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">App Dev</span><br>
+        Spring Tool Suite
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">.Net</span><br>
+        Visual Studio
+      </div>
+       <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">MEAN</span><br>
+        VS Code
+      </div>
+    </div>
+   
+    
+  <!-- End About Section -->
   </div>
 
-<div th:replace="fragments/nav :: foot" ></div>
-<script src="../javascript/index.js" ></script>
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Charlotte NC, US</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: swhitfi2@email.cpcc.edu</p>
+    </div>
+    
+    <!-- Image of location/map -->
+    <img src="DevOpsVenn.jpg" class="w3-image w3-greyscale" style="width:25%;margin:32px 0">
+   
+  
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
 </body>
 </html>
+
+
+
+
+
+
+
